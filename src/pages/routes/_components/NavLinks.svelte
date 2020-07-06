@@ -1,9 +1,8 @@
 <script>
-    // your script goes here
+    import { url } from '@sveltech/routify';
 </script>
 
 <style>
-
     .sh-header {
         display: flex;
         justify-content: space-between;
@@ -43,11 +42,18 @@
         font-family: 'Righteous', cursive;
     }
 
+    .search-bar {
+        height: 30px;
+        width: 220px;
+        background-color: #EDEDED;
+        border-radius: 8px;
+    }
+
 </style>
 
 <header class="sh-header">
     <div class="left-nav">
-        <a href="." class="sh-logo">
+        <a href={$url('dashboard')} class="sh-logo">
             <img src="../logo.svg" alt="sh-icon" class="logo">
             <div class="sh-name">Sharity</div>
         </a>
@@ -61,7 +67,7 @@
 
     <nav class="sh-nav">
         <ul class="sh-nav-container">
-            <li class="item"><a href=".">Dashboard</a></li>
+            <li class="item"><a href={$url('dashboard')}>Dashboard</a></li>
             <li class="item"><a href=".">Create event</a></li>
             <li class="item"><a href=".">Sign in</a></li>
         </ul>

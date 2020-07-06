@@ -3,15 +3,27 @@
 </script>
 
 <style>
-    .sh-container {
+    .sh-container .sh-nav{
         margin: 0 auto;
         padding: 20px 5%;
-        max-width: 1400px;
+    }
+    .sh-container .sh-content{
+        margin: 0 auto;
+        padding: 20px 5%;
+        max-width: 1300px;
+    }
+    
+    .sh-content {
+        margin-top: 2.5em;
     }
 </style>
 
 <div class="sh-container">
-    <NavLinks />
-    <slot>
-    </slot>
+    <div class="sh-nav">
+        <NavLinks />
+    </div>
+    <div class="sh-content">
+        <slot>
+        </slot>
+    </div>
 </div>

@@ -5,12 +5,12 @@
 <style>
     /* your styles go here */
     .sh-content {
-        margin: 3.5em auto;
+        margin: 0 auto;
         font-family: 'Righteous', cursive;
     }
 
     .events-container {
-        margin-top: 5em;
+        margin-bottom: 5em;
     }
 
     .sh-events {
